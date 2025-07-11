@@ -123,7 +123,7 @@ class LazyFile:
     ):
         self.name: str = os.fspath(filename)
         self.mode = mode
-        self.encoding = encoding
+        self.encoding = "utf-16"
         self.errors = errors
         self.atomic = atomic
         self._f: t.IO[t.Any] | None
